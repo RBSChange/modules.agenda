@@ -1,0 +1,8 @@
+<ul class="mini-navigation">
+	<li>
+		<img change:image="front/rss.gif" alt="*" /> <a class="link" change:link="module agenda; action ViewFeed" i18n:translate="&modules.agenda.frontoffice.Rss-link;" />
+	</li>
+	<li tal:condition="isHomepage" >
+	 	<a class="link" change:link="tag contextual_website_website_modules_agenda_page-list" i18n:translate="&modules.agenda.frontoffice.List-link;" />
+	</li>
+</ul>

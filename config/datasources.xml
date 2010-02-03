@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<datasources>
+  <datasource treecomponents="modules_website/topic" listcomponents="modules_agenda/event"/>
+  <datasource name="pagecontent" treecomponents="modules_website/topic" listcomponents="modules_agenda/event"/>
+</datasources>

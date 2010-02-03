@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<behaviour>
+  <event type="drop" target="modules_website_topic" flavour="listitem/component" source="modules_agenda_event" actions="move"/>  
+  <event type="drop" target="modules_generic_rootfolder" flavour="listitem/component" source="modules_website_topic" actions="move" />
+  
+  <event type="select contextmenu" target="modules_website_topic" actions="create_ editPermissions -rename -delete remove">
+  	<actiongroup name="create_" actions="createEvent" icon="add" />
+  </event>
+  <event type="select contextmenu" target="modules_generic_rootfolder" actions="-openOrderChildren addTopic | editPermissions -createFolder" />
+  
+  <datasource module="agenda" components="modules_website/topic"/>
+  
+  <columns>
+    <column ref="label" flex="5" label="Module-name" primary="true" properties="type"/>
+  </columns>
+</behaviour>

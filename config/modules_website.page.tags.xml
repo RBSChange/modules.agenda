@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<tags extends="generic">
+	<tag label="&amp;modules.agenda.bo.tags.Agenda-list;" icon="calendar">functional_agenda_event-list</tag>
+	<tag label="&amp;modules.agenda.bo.tags.Agenda-detail;" icon="calendar">functional_agenda_event-detail</tag>
+	<tag label="&amp;modules.agenda.bo.tags.Agenda-Website-list;" icon="calendar">contextual_website_website_modules_agenda_page-list</tag>
+</tags>

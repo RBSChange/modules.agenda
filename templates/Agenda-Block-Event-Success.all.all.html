@@ -1,0 +1,76 @@
+<ul class="mini-navigation" tal:condition="php: (linksposition == 'top' || linksposition == 'both')  AND (linktoallevents || linktoeventsfromsametopic)">
+	<li tal:condition="php: linktoallevents == 'true'">
+		<a class="link" change:link="tag ctx_agenda_page-list" i18n:translate="&modules.agenda.frontoffice.All-events;" />
+	</li>
+	<li tal:condition="php: linktoeventsfromsametopic == 'true'">
+		<a class="link" change:link="tag functional_agenda_event-list" i18n:translate="&modules.agenda.frontoffice.Events-in-the-same-topic;" />
+	</li>
+</ul>
+
+<div tal:condition="event/getCategory" class="category-header">
+	<h4 class="title category" tal:content="event/getCategory/getLabel"/>
+</div>
+
+<div class="cleaner"></div>
+
+<h3 class="heading-three">${event/getLabel} <a change:edit="document event" /></h3>
+
+<h3 class="title">
+<small tal:condition="event/lastsOneDay">
+		<strong i18n:translate="&modules.agenda.frontoffice.OndateLabel;" />
+    	<span tal:condition="shortdates" change:date="format 'names'; value event/getDate" tal:omit-tag=""/>
+    	<span tal:condition="not: shortdates" change:date="format extendedDateFormat; value event/getDate" tal:omit-tag=""/>
+</small>
+</h3>
+<img tal:condition="event/getDetailvisual" change:media="document event/getDetailvisual; format 'modules.agenda.frontoffice/detailvisual'; class 'content left'"/>
+<div class="richtext chapo" tal:condition="event/getSummaryAsHtml" ><i><strong tal:content="event/getSummaryAsHtml"></strong></i></div>
+<div tal:condition="event/getTextAsHtml" tal:content="event/getTextAsHtml"/>
+
+<div class="cleaner"></div>
+
+<div class="agenda-block">
+	<dl>
+		<dt tal:condition="event/hasDatetimeinfo">
+			<strong i18n:translate="&modules.agenda.frontoffice.Detail-datetimeinfo;"/>
+		</dt>
+		<dd tal:condition="event/hasDatetimeinfo" tal:content="event/getDatetimeinfoAsHtml" />
+		<dt tal:condition="event/hasPlace">
+				<strong i18n:translate="&modules.agenda.frontoffice.Detail-place;"/>
+		</dt>
+		<dd tal:condition="event/hasPlace" tal:content="event/getPlaceAsHtml" />
+		<dt tal:condition="event/hasAccessmap">
+			<strong i18n:translate="&modules.agenda.frontoffice.Detail-accessmap;"/>
+		</dt>
+		<dd tal:condition="event/hasAccessmap">
+			<div change:download="event/getAccessmap"/>
+		</dd>
+		<dt tal:condition="event/hasAttachment">
+			 	<strong i18n:translate="&modules.agenda.frontoffice.Detail-attachment;"/>
+		</dt>
+		<dd  tal:condition="event/hasAttachment">
+			<div change:download="event/getAttachment"/>
+		</dd>
+		<dt tal:condition="event/hasContact">
+			<strong i18n:translate="&modules.agenda.frontoffice.Detail-contact;" />
+			</dt>
+			<dd tal:condition="event/hasContact" tal:content="event/getContactAsHtml">
+			</dd>
+		<dt tal:condition="event/hasSubscriptionpage">
+			<strong i18n:translate="&modules.agenda.frontoffice.Subscription-page;" />
+			</dt>
+			<dd tal:condition="event/hasSubscriptionpage">
+				<a change:link="document event/getSubscriptionpage" tal:content="event/getSubscriptionpage/getLabel"/>
+			</dd>
+		</dl>
+</div>
+
+<div class="cleaner"></div>
+
+<ul class="mini-navigation" tal:condition="php: (linksposition == 'bottom' || linksposition == 'both')  AND (linktoallevents || linktoeventsfromsametopic)">
+	<li tal:condition="php: linktoallevents == 'true'">
+		<a class="link" change:link="tag ctx_agenda_page-list" i18n:translate="&modules.agenda.frontoffice.All-events;" />
+	</li>
+	<li tal:condition="php: linktoeventsfromsametopic == 'true'">
+		<a class="link" change:link="tag functional_agenda_event-list" i18n:translate="&modules.agenda.frontoffice.Events-in-the-same-topic;" />
+	</li>
+</ul>

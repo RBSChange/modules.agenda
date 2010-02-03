@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
+	<binding fileName="modules/generic/persistentdocument/import/generic_binding.xml" />
+	<binding fileName="modules/agenda/persistentdocument/import/agenda_binding.xml" />
+
+	<rootfolder module="preferences">
+		<agendapreferences />
+	</rootfolder>
+	
+	<systemfolder module="list" relatedmodule="agenda">
+		<editablelist listid="modules_agenda/category"
+			description="Catégorie des événements de l'agenda"
+			label="Catégorie des événements de l'agenda">	
+		</editablelist>
+		
+		<staticlist listid="modules_agenda/listvisualposition"
+			label="Position des visuels" description="Position des visuels">
+				<staticitem label="&amp;modules.agenda.document.preferences.Left-visual;" value="left"/>
+				<staticitem label="&amp;modules.agenda.document.preferences.Right-visual;" value="right"/>
+				<staticitem label="&amp;modules.agenda.document.preferences.Alternate-visual;" value="alternate"/>
+		</staticlist>
+		
+		<staticlist listid="modules_agenda/blockdisplaylisttype"
+			label="Type d'affichage de la liste" 
+			description="Type d'affichage de la liste">
+				<staticitem label="&amp;modules.agenda.bo.general.Classic-display;" value="classic"/>
+				<staticitem label="&amp;modules.agenda.bo.general.Homepage-display;" value="homepage"/>
+				<staticitem label="&amp;modules.agenda.bo.general.Archive-display;" value="archive"/>
+		</staticlist>
+		
+		<staticlist listid="modules_agenda/blockdisplaytimeordered"
+			label="Ordre d'affichage des événements" 
+			description="Ordre d'affichage des événements">
+				<staticitem label="&amp;modules.agenda.bo.general.Achrono-display;" value="false"/>
+				<staticitem label="&amp;modules.agenda.bo.general.Chrono-display;" value="true"/>
+		</staticlist>
+		
+		<staticlist listid="modules_agenda/calendarcount"
+			label="Affichages du calendrier" 
+			description="Les affichages de calendrier possibles dans une liste d'événements">
+				<staticitem label="&amp;modules.agenda.bo.general.No-calendar-display;" value="0"/>
+				<staticitem label="&amp;modules.agenda.bo.general.Single-calendar-display;" value="1"/>
+				<staticitem label="&amp;modules.agenda.bo.general.Double-calendar-display;" value="2"/>
+		</staticlist>
+		
+		<staticlist listid="modules_agenda/linksposition"
+			label="Position des liens" 
+			description="Position des liens">
+				<staticitem label="&amp;modules.agenda.bo.general.Position-both;" value="both"/>
+				<staticitem label="&amp;modules.agenda.bo.general.Position-top;" value="top"/>
+				<staticitem label="&amp;modules.agenda.bo.general.Position-bottom;" value="bottom"/>
+		</staticlist>		
+	</systemfolder>	
+</script>

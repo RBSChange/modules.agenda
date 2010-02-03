@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.rbs.fr/schema/change-document/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/1.0 http://www.rbschange.fr/static/schema/change-document/1.0.xsd" 
+    model-version="1.0" indexable="true" icon="calendar.png" use-correction="true">
+  	<properties>
+		<add name="publicationstatus" localized="true"/>
+		<add name="date" type="DateTime" min-occurs="1" max-occurs="1" />
+		<add name="enddate" type="DateTime" min-occurs="0" max-occurs="1" />
+		<add name="summary" type="XHTMLFragment" min-occurs="0" max-occurs="1" localized="true"/>
+		<add name="contextualdocument" type="modules_generic/Document" min-occurs="0" max-occurs="1"/>
+		<add name="text" type="XHTMLFragment" min-occurs="0" max-occurs="1" localized="true"/>
+		<add name="linkedpage" type="modules_website/page"  min-occurs="0" max-occurs="1"/>
+		<add name="listvisual" type="modules_media/media" min-occurs="0" max-occurs="1"/>
+		<add name="detailvisual" type="modules_media/media" min-occurs="0" max-occurs="1"/>
+		<add name="datetimeinfo" type="XHTMLFragment" min-occurs="0" max-occurs="1" localized="true"/>
+		<add name="place" type="XHTMLFragment" min-occurs="0" max-occurs="1" localized="true"/>
+		<add name="accessmap" type="modules_media/media" min-occurs="0" max-occurs="1" />
+		<add name="contact" type="XHTMLFragment" min-occurs="0" max-occurs="1" localized="true"/>
+  		<add name="attachment" type="modules_media/media" min-occurs="0" max-occurs="1" />
+		<add name="priority" type="Integer" min-occurs="0" max-occurs="1" />
+		<add name="homepagespan" type="Integer" min-occurs="0" max-occurs="1" />
+		<add name="endhomepagedate" type="DateTime" min-occurs="0" max-occurs="1" />
+		<add name="category" type="modules_list/item" min-occurs="0" max-occurs="1" from-list="modules_agenda/category" />
+		<add name="subscriptionpage" type="modules_website/page" min-occurs="0" max-occurs="1" />
+		<add name="homepagevisibility" type="Boolean" min-occurs="0" max-occurs="1" />
+	</properties>
+  
+	<form>
+  		<property name="label" display="edit"/>
+  		<property name="date" display="edit" required="true"/>
+  		<property name="enddate" display="edit" enddate="true"/>
+		<property name="summary" display="edit" />
+  		<property name="contextualdocument" display="hidden" allow="modules_website_website,modules_website_topic" />
+  		<!--  -->
+  		<property name="text" display="edit" />
+  		<property name="linkedpage" display="edit" />
+  		<!-- -->
+  		<property name="listvisual" display="edit" />
+  		<property name="detailvisual" display="edit" />
+  		<!-- -->
+  		<property name="datetimeinfo" display="edit"/>
+  		<property name="place" display="edit" />
+  		<property name="accessmap" display="edit" />
+  	  	<property name="contact" display="edit" />
+  	  	<property name="attachment" display="edit" />
+  		<!-- -->
+  		<property name="priority" control-type="List" display="edit"/>
+  	  	<property name="startpublicationdate" display="edit"/>
+  		<property name="endpublicationdate" enddate="true" display="edit"/>
+  		<property name="endhomepagedate" display="hidden" />
+  		<property name="homepagevisibility" display="hidden" />
+  	</form>
+  	
+  	 <statuses default="DRAFT"/>
+  
+</document>

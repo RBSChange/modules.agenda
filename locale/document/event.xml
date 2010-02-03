@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="document-name">
+    <locale lang="fr">évènement</locale>
+    <locale lang="de">Ereignis</locale>
+  </entity>
+  <entity id="edit-document-title">
+    <locale lang="fr">Editer l'évènement {label}</locale>
+  </entity>
+  <entity id="edition-form-title">
+    <locale lang="fr">propriétés de l'évènement</locale>
+    <locale lang="en">event properties</locale>
+    <locale lang="de">Einstellungen Ereignis</locale>
+  </entity>
+  <entity id="label">
+    <locale lang="fr">titre</locale>
+    <locale lang="en">title</locale>
+    <locale lang="de">Titel</locale>
+  </entity>
+  <entity id="label-help">
+    <locale lang="fr">titre</locale>
+    <locale lang="en">title</locale>
+    <locale lang="de">Title</locale>
+  </entity>
+  <entity id="startpublicationdate">
+    <locale lang="fr">date de début de parution</locale>
+    <locale lang="en">start publication date</locale>
+    <locale lang="de">Anfangsdatum der Veröffentlichung</locale>
+  </entity>
+  <entity id="startpublicationdate-help">
+    <locale lang="fr">date de début de parution</locale>
+    <locale lang="en">start publication date</locale>
+    <locale lang="de">Anfangsdatum der Veröffentlichung</locale>
+  </entity>
+  <entity id="endpublicationdate">
+    <locale lang="fr">date de fin de parution</locale>
+    <locale lang="en">end publication date</locale>
+    <locale lang="de">Enddatum der Veröffentlichung</locale>
+  </entity>
+  <entity id="endpublicationdate-help">
+    <locale lang="fr">date de fin de parution</locale>
+    <locale lang="en">end publication date</locale>
+    <locale lang="de">Enddatum der Veröffentlichung</locale>
+  </entity>
+  <entity id="date">
+    <locale lang="fr">date de l'évènement</locale>
+    <locale lang="en">event date</locale>
+    <locale lang="de">Ereignisdatum</locale>
+  </entity>
+  <entity id="date-help">
+    <locale lang="fr">date de l'évènement</locale>
+    <locale lang="en">event date</locale>
+    <locale lang="de">Ereignisdatum</locale>
+  </entity>
+  <entity id="enddate">
+    <locale lang="fr">date de fin l'évènement</locale>
+    <locale lang="en">event end date</locale>
+    <locale lang="de">Enddatum Ereignis</locale>
+  </entity>
+  <entity id="enddate-help">
+    <locale lang="fr">date de fin l'évènement </locale>
+    <locale lang="en">event end date</locale>
+    <locale lang="de">Enddatum Ereignis</locale>
+  </entity>
+  <entity id="summary">
+    <locale lang="fr">résumé</locale>
+    <locale lang="en">summary</locale>
+    <locale lang="de">Zusammenfassung</locale>
+  </entity>
+  <entity id="summary-help">
+    <locale lang="fr">résumé</locale>
+    <locale lang="en">summary</locale>
+    <locale lang="de">Zusammenfassung</locale>
+  </entity>
+  <entity id="contextualdocument">
+    <locale lang="fr">contextualdocument</locale>
+    <locale lang="de">Kontext abhängiges Dokument</locale>
+  </entity>
+  <entity id="contextualdocument-help">
+    <locale lang="fr">contextualdocument</locale>
+    <locale lang="de">Kontext abhängiges Dokument</locale>
+  </entity>
+  <entity id="text">
+    <locale lang="fr">texte de l'évènement</locale>
+    <locale lang="en">event text</locale>
+    <locale lang="de">Ereignistext</locale>
+  </entity>
+  <entity id="text-help">
+    <locale lang="fr">texte de l'évènement</locale>
+    <locale lang="en">event text</locale>
+    <locale lang="de">Ereignistext</locale>
+  </entity>
+  <entity id="linkedpage">
+    <locale lang="fr">page liée</locale>
+    <locale lang="en">linked page</locale>
+    <locale lang="de">verbundene Seite</locale>
+  </entity>
+  <entity id="linkedpage-help">
+    <locale lang="fr">page liée</locale>
+    <locale lang="en">linked page</locale>
+    <locale lang="de">verbundene Seite</locale>
+  </entity>
+  <entity id="listvisual">
+    <locale lang="fr">visuel de liste</locale>
+    <locale lang="en">list visual</locale>
+    <locale lang="de">Listenbild</locale>
+  </entity>
+  <entity id="listvisual-help">
+    <locale lang="fr">visuel de liste</locale>
+    <locale lang="en">list visual</locale>
+    <locale lang="de">Listenbild</locale>
+  </entity>
+  <entity id="detailvisual">
+    <locale lang="fr">visuel du détail</locale>
+    <locale lang="en">detail visual</locale>
+    <locale lang="de">Detailbild</locale>
+  </entity>
+  <entity id="detailvisual-help">
+    <locale lang="fr">visuel du détail</locale>
+    <locale lang="en">detail visual</locale>
+    <locale lang="de">Detailbild</locale>
+  </entity>
+  <entity id="datetimeinfo">
+    <locale lang="fr">date et heure</locale>
+    <locale lang="en">date and time</locale>
+    <locale lang="de">Datum und Zeit</locale>
+  </entity>
+  <entity id="datetimeinfo-help">
+    <locale lang="fr">date et heure</locale>
+    <locale lang="en">date and time</locale>
+    <locale lang="de">Datum und Zeit</locale>
+  </entity>
+  <entity id="place">
+    <locale lang="fr">lieu</locale>
+    <locale lang="en">place</locale>
+    <locale lang="de">Ort</locale>
+  </entity>
+  <entity id="place-help">
+    <locale lang="fr">lieu</locale>
+    <locale lang="en">place</locale>
+    <locale lang="de">Ort</locale>
+  </entity>
+  <entity id="accessmap">
+    <locale lang="fr">plan d'accès</locale>
+    <locale lang="en">accessmap</locale>
+    <locale lang="de">Anfahrtsskizze</locale>
+  </entity>
+  <entity id="accessmap-help">
+    <locale lang="fr">plan d'accès</locale>
+    <locale lang="en">accessmap</locale>
+    <locale lang="de">Anfahrtsskizze</locale>
+  </entity>
+  <entity id="contact">
+    <locale lang="fr">contact</locale>
+    <locale lang="en">contact</locale>
+    <locale lang="de">Kontakt</locale>
+  </entity>
+  <entity id="contact-help">
+    <locale lang="fr">contact</locale>
+    <locale lang="en">contact</locale>
+    <locale lang="de">Kontakt</locale>
+  </entity>
+  <entity id="attachment">
+    <locale lang="fr">fichier attaché</locale>
+    <locale lang="en">attachment</locale>
+    <locale lang="de">Anhang</locale>
+  </entity>
+  <entity id="attachment-help">
+    <locale lang="fr">fichier attaché</locale>
+    <locale lang="en">attachment</locale>
+    <locale lang="de">Anhang</locale>
+  </entity>
+  <entity id="priority">
+    <locale lang="fr">priorité d'affichage</locale>
+    <locale lang="en">dislay priority</locale>
+    <locale lang="de">Ansichtspriorität</locale>
+  </entity>
+  <entity id="priority-help">
+    <locale lang="fr">priorité d'affichage</locale>
+    <locale lang="en">dislay priority</locale>
+    <locale lang="de">Ansichtspriorität</locale>
+  </entity>
+  <entity id="category">
+    <locale lang="fr">catégorie</locale>
+    <locale lang="en">category</locale>
+    <locale lang="de">Kategorie</locale>
+  </entity>
+  <entity id="category-help">
+    <locale lang="fr">catégorie</locale>
+    <locale lang="en">category</locale>
+    <locale lang="de">Kategorie</locale>
+  </entity>
+  <entity id="subscriptionpage">
+    <locale lang="fr">page d'inscription</locale>
+    <locale lang="en">subscription page</locale>
+    <locale lang="de">Anmeldungsseite</locale>
+  </entity>
+  <entity id="subscriptionpage-help">
+    <locale lang="fr">page d'inscription</locale>
+    <locale lang="en">subscription page</locale>
+    <locale lang="de">Anmeldungsseite</locale>
+  </entity>
+  <entity id="homepagevisibility-duration">
+    <locale lang="fr">durée de parution en page d'accueil</locale>
+    <locale lang="en">homepage visibility duration</locale>
+    <locale lang="de">Veröffentlichungsdauer auf der Startseite</locale>
+  </entity>
+  <entity id="homepagevisibility-help">
+    <locale lang="fr">durée de parution en page d'accueil</locale>
+    <locale lang="en">homepage visibility duration</locale>
+    <locale lang="de">Veröffentlichungsdauer auf der Startseite</locale>
+  </entity>
+<!-- tabs -->
+  <entity id="publication-spaced">
+    <locale lang="fr"> Parution</locale>
+    <locale lang="en"> publication</locale>
+    <locale lang="de"> Veröffentlichung</locale>
+  </entity>
+  <entity id="information-contact-spaced">
+    <locale lang="fr"> Contact</locale>
+    <locale lang="en"> contact</locale>
+    <locale lang="de"> Kontakt</locale>
+  </entity>
+  <entity id="information-date-spaced">
+    <locale lang="fr"> Date et lieu</locale>
+    <locale lang="en"> date and time</locale>
+    <locale lang="de"> Datum und Zeit</locale>
+  </entity>
+  <entity id="visual-spaced">
+    <locale lang="fr"> Visuels</locale>
+    <locale lang="en"> visuals</locale>
+    <locale lang="de"> Abbildung</locale>
+  </entity>
+  <entity id="text-spaced">
+    <locale lang="fr"> Contenu</locale>
+    <locale lang="en"> content</locale>
+    <locale lang="de"> Inhalt</locale>
+  </entity>
+  <entity id="generalities-spaced">
+    <locale lang="fr"> Généralités</locale>
+    <locale lang="en"> generalities</locale>
+    <locale lang="de"> Allegemeines</locale>
+  </entity>
+  <entity id="week">
+    <locale lang="fr">semaine(s)</locale>
+    <locale lang="en">week(s)</locale>
+    <locale lang="de">Woche(n)</locale>
+  </entity>
+  <entity id="month">
+    <locale lang="fr">mois</locale>
+    <locale lang="en">month(s)</locale>
+    <locale lang="de">Monat(e)</locale>
+  </entity>
+  <entity id="year">
+    <locale lang="fr">année(s)</locale>
+    <locale lang="en">year(s)</locale>
+    <locale lang="de">Jahr(e)</locale>
+  </entity>
+</localization>

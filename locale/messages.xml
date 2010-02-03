@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="error.enddatemustbeafterstartdate">
+    <locale lang="fr">la date de fin de l'évènement doit être après la date de début</locale>
+    <locale lang="en">end date of the event must be after beginning date</locale>
+    <locale lang="de">Enddatum des Ereignisses muss später als Anfangsdatum sein</locale>
+  </entity>
+</localization>

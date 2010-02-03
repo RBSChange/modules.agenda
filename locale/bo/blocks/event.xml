@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization>
+  <entity id="shortdates">
+    <locale lang="fr">Affichage court des dates</locale>
+    <locale lang="en">Short date display</locale>
+    <locale lang="de">kurzes Datum anzeigen</locale>
+  </entity>
+  <entity id="shortdates-help">
+    <locale lang="fr">lorsque cette option est activée, les dates sont affichées en utilisant un format court.</locale>
+    <locale lang="de">ist diese Option aktiviert, wird das Datum in einem kurzen Format angezeigt.</locale>
+  </entity>
+  <entity id="linktoallevents">
+    <locale lang="fr">lien vers toutes les évènements</locale>
+    <locale lang="en">display link to all events</locale>
+    <locale lang="de">Verknüpfung zu allen Ereignissen</locale>
+  </entity>
+  <entity id="linktoallevents-help">
+    <locale lang="fr">afficher ou non le lien menant à la liste de tous les évènements du site. Il s'agit de la page tagguée "Liste de tous les évènements".</locale>
+    <locale lang="en">linktoallevents-help</locale>
+    <locale lang="de">Verknüpfung zu allen Ereignissen der Seite anzeigen oder nicht anzeigen. Dies ist die getaggte Seite "Liste aller Ereignisse".</locale>
+  </entity>
+  <entity id="linktoeventsfromsametopic">
+    <locale lang="fr">lien vers les évènements de la rubrique</locale>
+    <locale lang="en">display link to events in the same topic</locale>
+    <locale lang="de">Verknüpfung zu den Ereignissen der Rubrik</locale>
+  </entity>
+  <entity id="linktoeventsfromsametopic-help">
+    <locale lang="fr">afficher ou non le lien menant à la liste des évènements de la rubrique. Il s'agit de la page tagguée "Liste des évènements de la rubrique".</locale>
+    <locale lang="en">linktoeventsfromsametopic</locale>
+    <locale lang="de">Verknüpfung zur Liste der Ereignisse der Rubrik anzeigen oder nicht anzeigen. Dies ist die getaggte Seite "Liste der Ereignisse der Rubrik".</locale>
+  </entity>
+  <entity id="linksposition">
+    <locale lang="fr">position des liens</locale>
+    <locale lang="en">links position</locale>
+    <locale lang="de">Position der Verknüpfungen</locale>
+  </entity>
+  <entity id="linksposition-help">
+    <locale lang="fr">détermine où les liens "Voir tous les évènements" et "Voir les évènements de la rubrique" sont affichés. Si aucun des liens n'est affiché, ce paramètres est sans importance.</locale>
+    <locale lang="en">linktonewsfromsametopic</locale>
+    <locale lang="de">gibt an wo die Verknüpfungen "Alle Ereignisse anzeigen" und "Alle Elemente der Rubrik anzeigen" angezeigt sind. Wenn keine der Verknüpfungen angezeigt ist, ist dieser Parameter unwichtig.</locale>
+  </entity>
+</localization>

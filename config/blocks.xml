@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<blocks>
+	<block type="modules_agenda_calendar"
+		   display="type:standard;standalone:true;"
+		   icon="calendar"
+		   label="&amp;modules.agenda.bo.blocks.Calendar;">
+		<parameters>
+			<parameter name="parentopic" type="modules_website/topic" />
+		</parameters>
+	</block>
+
+	<block type="modules_agenda_event"
+		   display=""
+		   icon="calendar"
+		   label="&amp;modules.agenda.bo.blocks.Event-detail;">
+		<parameters>
+			<parameter name="shortdates" type="Boolean" default-value="false" />
+			<parameter name="linktoallevents" type="Boolean" default-value="false" />
+			<parameter name="linktoeventsfromsametopic" type="Boolean" default-value="true" />
+			<parameter name="linksposition" type="String" default-value="both" from-list="modules_agenda/linksposition" />
+		</parameters>
+	</block>
+
+	<block type="modules_agenda_eventContextualList"
+		   display="shortdates:false;itemcount:-1;includechildren:false;visual:true;type:classic;timeordered:true;calendarcount:0;"
+		   icon="calendar"
+		   label="&amp;modules.agenda.bo.blocks.Event-list;">
+		<parameters>
+			<parameter name="shortdates" type="Boolean" default-value="false" />
+			<parameter name="itemcount" type="Integer" default-value="-1" />
+			<parameter name="includechildren" type="Boolean" default-value="false" />
+			<parameter name="currentmonthevent" type="Boolean" default-value="false" />
+			<parameter name="visual" type="Boolean" default-value="true" />
+			<parameter name="type" type="String" list-id="modules_agenda/blockdisplaylisttype" default-value="classic" />
+			<parameter name="timeordered" type="String" list-id="modules_agenda/blockdisplaytimeordered" default-value="true" />
+			<parameter name="calendarcount" type="String" list-id="modules_agenda/calendarcount" default-value="0" />
+		</parameters>
+	</block>
+	<block type="modules_agenda_eventlist"
+		   display="shortdates:false;itemcount:-1;includechildren:true;visual:true;type:classic;timeordered:true;calendarcount:0;"
+		   icon="calendar"
+		   label="&amp;modules.agenda.bo.blocks.All-event-list;">
+		<parameters>
+			<parameter name="shortdates" type="Boolean" default-value="false" />
+			<parameter name="itemcount" type="Integer" default-value="-1" />
+			<parameter name="includechildren" type="Boolean" default-value="true" />
+			<parameter name="visual" type="Boolean" default-value="true" />
+			<parameter name="type" type="String" list-id="modules_agenda/blockdisplaylisttype" default-value="classic" />
+			<parameter name="timeordered" type="String" list-id="modules_agenda/blockdisplaytimeordered" default-value="true" />
+			<parameter name="calendarcount" type="String" list-id="modules_agenda/calendarcount" default-value="0" />
+		</parameters>
+	</block>
+
+	<block type="modules_agenda_topic"
+		   display="shortdates:false;itemcount:-1;includechildren:false;visual:true;type:classic;timeordered:true;calendarcount:0;"
+		   icon="calendar"
+		   hidden="true"
+		   label="&amp;modules.agenda.bo.blocks.Event-list;">
+		<parameters>
+			<parameter name="shortdates" type="Boolean" default-value="false" />
+			<parameter name="itemcount" type="Integer" default-value="-1" />
+			<parameter name="includechildren" type="Boolean" default-value="false" />
+			<parameter name="visual" type="Boolean" default-value="true" />
+			<parameter name="type" type="String" list-id="modules_agenda/blockdisplaylisttype" default-value="classic" />
+			<parameter name="timeordered" type="String" list-id="modules_agenda/blockdisplaytimeordered" default-value="true" />
+			<parameter name="calendarcount" type="String" list-id="modules_agenda/calendarcount" default-value="0" />
+		</parameters>
+	</block>
+
+	<block type="modules_agenda_nextevent"
+		   display="topiconly:true;shortdates:false"
+		   icon="calendar"
+		   label="&amp;modules.agenda.bo.blocks.Next-event;">
+		<parameters>
+			<parameter name="shortdates" type="Boolean" default-value="false" />
+		</parameters>
+	</block>
+</blocks>

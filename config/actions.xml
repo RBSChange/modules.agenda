@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<actions extends="generic">
+  <action name="createEvent" label="&amp;modules.agenda.bo.actions.Create-Event;">
+    <parameter name="listWidget"/>
+    <body><![CDATA[this.createDocument(listWidget, this.name, 'event', 'moduleForm');]]></body>
+  </action>
+  <action name="createPreferences" label="&amp;modules.agenda.bo.actions.Create-Preferences;">
+    <parameter name="listWidget"/>
+    <body><![CDATA[this.createDocument(listWidget, this.name, 'preferences', 'moduleForm');]]></body>
+  </action>
+</actions>

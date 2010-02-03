@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization>
+  <entity id="parentopic">
+    <locale lang="fr">rubrique parente</locale>
+    <locale lang="en">parent topic</locale>
+    <locale lang="de">verwandte Rubrik</locale>
+  </entity>
+  <entity id="parentopic-help">
+    <locale lang="fr">sélectionnez ici la rubrique dans laquelle récupérer les événements. Si aucune rubrique n'est spécifiée, la rubbrique contenant la page courante sera sélectionnée automatiquement.</locale>
+    <locale lang="de">wählen Sie hier die Rubrik, aus der die Ereignisse abgerufen werden. Ist keine Rubrik angegeben, wird die Rubrik der aktuellen Seite automatisch ausgewählt.</locale>
+  </entity>
+</localization>

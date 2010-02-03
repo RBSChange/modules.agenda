@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:i18n="http://phptal.motion-twin.com/i18n" xmlns:tal="http://phptal.motion-twin.com/tal" xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal">
+  <tabbox flex="1">
+    <tabs>
+      <tab i18n:attributes="label &amp;modules.agenda.document.event.Generalities-spaced;" change:icon="calendar/small shadow"/>
+      <tab i18n:attributes="label &amp;modules.agenda.document.event.Text-spaced;" change:icon="text/small shadow"/>
+      <tab i18n:attributes="label &amp;modules.agenda.document.event.Visual-spaced;" change:icon="eyeglasses/small shadow"/>
+      <tab i18n:attributes="label &amp;modules.agenda.document.event.Information-date-spaced;" change:icon="information/small shadow"/>
+      <tab i18n:attributes="label &amp;modules.agenda.document.event.Information-contact-spaced;" change:icon="information/small shadow"/>
+      <tab i18n:attributes="label &amp;modules.agenda.document.event.Publication-spaced;" change:icon="press/small shadow"/>
+    </tabs>
+    <tabpanels flex="1">
+      <tabpanel anonid="builder_auto-generated-general" orient="vertical">
+        <grid flex="1">
+          <columns>
+            <column/>
+            <column flex="1"/>
+          </columns>
+          <rows>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="label"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="label"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="date"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="date"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="enddate"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="enddate"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="summary"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="summary"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="category"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="category"/>
+            </row>
+          </rows>
+        </grid>
+      </tabpanel>
+      <tabpanel anonid="builder_auto-generated-text" orient="vertical">
+        <grid flex="1">
+          <columns>
+            <column/>
+            <column flex="1"/>
+          </columns>
+          <rows>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="text"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="text"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="linkedpage"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="linkedpage"/>
+            </row>
+          </rows>
+        </grid>
+      </tabpanel>
+      <tabpanel anonid="builder_auto-generated-visual" orient="vertical">
+        <grid flex="1">
+          <columns>
+            <column/>
+            <column flex="1"/>
+          </columns>
+          <rows>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="listvisual"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="listvisual"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="detailvisual"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="detailvisual"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="accessmap"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="accessmap"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="attachment"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="attachment"/>
+            </row>
+          </rows>
+        </grid>
+      </tabpanel>
+      <tabpanel anonid="builder_auto-generated-informationdate" orient="vertical">
+        <grid flex="1">
+          <columns>
+            <column/>
+            <column flex="1"/>
+          </columns>
+          <rows>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="place"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="place"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="datetimeinfo"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="datetimeinfo"/>
+            </row>
+          </rows>
+        </grid>
+      </tabpanel>
+      <tabpanel anonid="builder_auto-generated-informationplace" orient="vertical">
+        <grid flex="1">
+          <columns>
+            <column/>
+            <column flex="1"/>
+          </columns>
+          <rows>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="contact"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="contact"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="subscriptionpage"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="subscriptionpage"/>
+            </row>
+          </rows>
+        </grid>
+      </tabpanel>
+      <tabpanel anonid="builder_auto-generated-publication" orient="vertical">
+          <grid flex="1">
+            <columns>
+              <column/>
+              <column flex="1"/>
+            </columns>
+            <rows>
+              <row>
+                <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="priority"/>
+                <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="priority"/>
+              </row>
+              <row>
+                <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="startpublicationdate"/>
+                <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="startpublicationdate"/>
+              </row>
+              <row>
+                <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="endpublicationdate"/>
+                <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="endpublicationdate"/>
+              </row>
+              <row>
+                <wlabel i18n:attributes="value &amp;modules.agenda.document.event.Homepagevisibility-duration;"/>
+                <hbox>
+	                <wcombobox anonid="_homepagespanunit">
+	                  <wlistitem value="weeks" i18n:translate="&amp;modules.agenda.document.event.Week;"/>
+	                  <wlistitem value="months" i18n:translate="&amp;modules.agenda.document.event.Month;"/>
+	                  <wlistitem value="years" i18n:translate="&amp;modules.agenda.document.event.Year;"/>
+	                </wcombobox>
+	                <wcombobox anonid="_homepagespanvalue"/>
+	                <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="homepagespan"/>
+                </hbox>
+              </row>
+            </rows>
+          </grid>
+      </tabpanel>
+    </tabpanels>
+  </tabbox>
+</layout>

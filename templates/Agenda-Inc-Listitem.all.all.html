@@ -1,0 +1,50 @@
+<span tal:define="global linkedDocument event" tal:omit-tag=""/>
+<span tal:condition="event/hasLinkedpage" tal:omit-tag="">
+	<span tal:define="global linkedDocument event/getLinkedpage" tal:omit-tag=""/>
+</span>
+
+<ul class="vevent" change:docattr="event/getId">
+	<li>
+  		<h3 class="title summary"><a change:link="document linkedDocument" tal:content="event/getLabel"></a> <a change:edit="document event" /></h3>
+	</li>
+	<tal:block tal:condition="visual">
+		<li tal:condition="event/hasListVisual" class="listvisual">
+			<span tal:condition="displayLeft" tal:omit-tag="">
+				<div change:media="document event/getListvisual; class 'float-left'; format 'modules.agenda.frontoffice/listvisual';" />
+			</span> 
+			<span tal:condition="not: displayLeft" tal:omit-tag="" >
+				<div change:media="document event/getListvisual; class 'float-right'; format 'modules.agenda.frontoffice/listvisual';" />
+			</span> 
+		</li>
+	</tal:block>
+	<li class="description" tal:condition="event/hasSummary" tal:content="event/getSummaryAsHtml"></li>
+	<li class="place" tal:condition="event/hasPlace">
+		<strong i18n:translate="&amp;modules.agenda.frontoffice.PlaceLabel;"></strong>
+		<span tal:content="event/getPlaceAsHtml" class="location"></span>
+	</li>
+	<tal:block tal:condition="not: event/lastsOneDay">
+    	<li class="eventstart" ><strong i18n:translate="&amp;modules.agenda.frontoffice.BegindateLabel;"/>
+    		<abbr class="dtstart" tal:attributes="title event/getHCalendarDate">
+    			<span tal:condition="shortdates" change:date="format 'names'; value event/getDate"/>
+    			<span tal:condition="not: shortdates" change:date="format extendedDateFormat; value event/getDate"/>
+    		</abbr>
+   		</li>
+   		<li change:propattr="endDate" class="eventend" ><strong i18n:translate="&amp;modules.agenda.frontoffice.EnddateLabel;"/>
+        	<abbr class="dtend" tal:attributes="title event/getHCalendarEndDate">
+    			<span tal:condition="shortdates" change:date="format 'names'; value event/getEndDate"/>
+    			<span tal:condition="not: shortdates" change:date="format extendedDateFormat; value event/getEndDate"/>
+    		</abbr>
+   	 	</li>
+    </tal:block>
+    <tal:block tal:condition="event/lastsOneDay">
+    	<li class="eventstart" ><strong i18n:translate="&amp;modules.agenda.frontoffice.OndateLabel;"/>
+    		<abbr class="dtstart" tal:attributes="title event/getHCalendarDate">
+    			<span tal:condition="shortdates" change:date="format 'names'; value event/getDate"/>
+    			<span tal:condition="not: shortdates" change:date="format extendedDateFormat; value event/getDate"/>
+    		</abbr>
+   		</li>
+   		<li class="eventend hidden">
+        	<abbr class="dtend" tal:attributes="title event/getHCalendarEndDate" />
+   	 	</li>
+    </tal:block>
+</ul>

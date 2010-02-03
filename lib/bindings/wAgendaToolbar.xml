@@ -1,0 +1,213 @@
+<bindings   xmlns="http://www.mozilla.org/xbl"
+            xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:xbl="http://www.mozilla.org/xbl"
+            xmlns:html="http://www.w3.org/1999/xhtml"
+            xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal">
+
+    <binding id="wAgendaToolbar" extends="layout.wBlockToolbar#wBaseBlockToolbar">
+
+       <implementation>
+            <method name="onInitialize">
+                <body><![CDATA[
+   
+                    var _func = "onInitialize";
+                    var _args = [];
+                    try
+                    {
+                   		var dp = this.blockHandler.block.getDisplay();
+                   		// Hack for dropped folder block...
+                   		if ( dp['visual'] == undefined)
+                   		{
+                   			dp['visual'] = true;
+                   			dp['type'] =  'classic';
+                   			dp['itemcount'] = -1;
+                   			this.setBlockAttribute('display', 'visual', dp['visual']);
+                   			this.setBlockAttribute('display', 'type', dp['type']);
+                   			this.setBlockAttribute('display', 'itemcount', dp['itemcount']);
+                   			this.refreshBlock();
+                   			
+                   		}
+						document.getElementById('visual').setAttribute('checked', dp['visual']);
+						document.getElementById('viewType').value = dp['type'];
+						this.setCalendarVisibility(dp['type']);
+						document.getElementById('itemCount').value = dp['itemcount'];
+						document.getElementById('chronoitem').setAttribute('checked', dp['timeordered']);
+						document.getElementById('achronoitem').setAttribute('checked', !dp['timeordered']);
+						document.getElementById('includeChildren').setAttribute('checked', dp['includechildren']);
+                    	if (parseInt(dp['itemcount']) == -1)
+                    	{
+                    		document.getElementById('allEvents').setAttribute('checked', true);
+                    	}
+                    	else
+                    	{
+                    		document.getElementById('lastNb').hidden = false;
+                    	}
+					}
+                    catch (e)
+                    {
+                        this.error(_func, _args, e);
+                    }
+                ]]></body>
+            </method>
+
+            <method name="onUpdate">
+                <body><![CDATA[
+                    var _func = "onUpdate";
+                    var _args = [];
+                    try
+                    {
+                    
+                    }
+                    catch (e)
+                    {
+                        this.error(_func, _args, e);
+                    }
+                ]]></body>
+            </method>
+
+            
+            <method name="detailVisualDisplayChanged">
+                <body><![CDATA[
+                	this.setBlockAttribute('display', 'visual', document.getElementById('visual').getAttribute('checked'));
+                	this.refreshBlock();	
+                ]]></body>
+            </method>
+            
+            <method name="setCalendarVisibility">
+            <parameter name="displaytype"/>
+                <body><![CDATA[
+                	if (displaytype == 'homepage')
+                	{
+                		var dp = this.blockHandler.block.getDisplay();
+                		if (dp['calendarcount'] != null)
+                		{ 
+                			this.setCalendarCount(0);
+                		}
+                		document.getElementById('calendar').setAttribute('hidden', true);
+                	}
+                	else
+                	{
+						document.getElementById('calendar').setAttribute('hidden', false);
+                	}
+                ]]></body>
+            </method>
+            
+           	<method name="viewTypeChanged">
+                <body><![CDATA[
+                	var displaytype = document.getElementById('viewType').value; 
+                	this.setBlockAttribute('display', 'type', document.getElementById('viewType').value );
+                	this.setCalendarVisibility(displaytype);
+                	this.refreshBlock();	
+                ]]></body>
+            </method>
+          
+           <method name="setChronoOrder">
+				<parameter name="param"/>
+                <body><![CDATA[
+                	document.getElementById('achronoitem').setAttribute('checked', !param);
+                	document.getElementById('chronoitem').setAttribute('checked', param);
+                	this.setBlockAttribute('display', 'timeordered', param );
+                	this.refreshBlock();	
+                ]]></body>
+            </method>
+            
+            <method name="setCalendarCount">
+				<parameter name="param"/>
+                <body><![CDATA[
+                	switch(param)
+                	{
+                	    case 0:
+                			document.getElementById('nocalendar').setAttribute('checked', true);
+                			document.getElementById('singlecalendar').setAttribute('checked', false);
+                			document.getElementById('doublecalendar').setAttribute('checked', false);
+                		break;
+                		case 1:
+                			document.getElementById('nocalendar').setAttribute('checked', false);
+                			document.getElementById('singlecalendar').setAttribute('checked', true);
+                			document.getElementById('doublecalendar').setAttribute('checked', false);
+                		break;
+                		case 2:
+                			document.getElementById('nocalendar').setAttribute('checked', false);
+                			document.getElementById('singlecalendar').setAttribute('checked', false);
+	                		document.getElementById('doublecalendar').setAttribute('checked', true);
+                		break;
+                	}
+                	this.setBlockAttribute('display', 'calendarcount', param );
+                	this.refreshBlock();	
+                ]]></body>
+            </method>
+			
+            <method name="validateItemCount">
+            	<body><![CDATA[
+					this.setBlockAttribute('display', 'itemcount', document.getElementById('itemCount').value );
+            		this.refreshBlock();	
+				]]></body>
+            </method>
+            
+            <method name="includeChildren">
+            	<body><![CDATA[
+					this.setBlockAttribute('display', 'includechildren', document.getElementById('includeChildren').getAttribute('checked') );
+            		this.refreshBlock();	
+				]]></body>
+            </method>
+            <method name="eventCountChanged">
+               <body><![CDATA[
+               		var isHidden = document.getElementById('lastNb').getAttribute('hidden');
+               		document.getElementById('lastNb').hidden = !isHidden;
+               		if (document.getElementById('allEvents').getAttribute('checked'))
+               		{
+               			this.setBlockAttribute('display', 'itemcount', -1 );
+               			this.refreshBlock();
+               		}
+               		else
+               		{
+               		    document.getElementById('itemCount').value = 10;
+               		}
+				]]></body>
+            </method>
+        </implementation> 
+
+        <xbl:content xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:xbl="http://www.mozilla.org/xbl" xmlns:html="http://www.w3.org/1999/xhtml" orient="vertical">
+            <toolbar anonid="toolbar" flex="1">
+                <toolbarseparator/>
+            	<menulist oncommand="viewTypeChanged();" id="viewType" label="blabla">
+  					<menupopup>
+    					<menuitem value="classic" label="&amp;modules.agenda.bo.toolbar.Classic-display;"/>
+   						<menuitem value="homepage" label="&amp;modules.agenda.bo.toolbar.Homepage-display;"/>
+  					</menupopup>
+				</menulist>                	
+
+            	<toolbarseparator/>
+				<menu label="&amp;modules.agenda.bo.toolbar.Display-properties;" id="properties">
+ 					<menupopup id="properties-popup">
+ 						<menu label="&amp;modules.agenda.bo.toolbar.Chrono-properties;" id="chrono">
+ 							<menupopup id="chrono-popup">
+ 							    <menuitem type="checkbox" id="chronoitem" label="&amp;modules.agenda.bo.toolbar.Chrono-display;" oncommand="setChronoOrder(true);"/>
+ 								<menuitem type="checkbox" id="achronoitem" label="&amp;modules.agenda.bo.toolbar.Achrono-display;" oncommand="setChronoOrder(false);"/>
+  							</menupopup>
+						</menu>
+						<menu label="&amp;modules.agenda.bo.toolbar.Calendar-properties;" id="calendar">
+ 							<menupopup id="calendar-popup">
+ 							    <menuitem type="checkbox" id="nocalendar" label="&amp;modules.agenda.bo.toolbar.No-Calendar-display;" oncommand="setCalendarCount(0);"/>
+ 								<menuitem type="checkbox" id="singlecalendar" label="&amp;modules.agenda.bo.toolbar.Single-Calendar-display;" oncommand="setCalendarCount(1);"/>
+ 							    <menuitem type="checkbox" id="doublecalendar" label="&amp;modules.agenda.bo.toolbar.Double-Calendar-display;" oncommand="setCalendarCount(2);"/>
+  							</menupopup>
+						</menu>
+						<menuseparator/>
+     					<menuitem type="checkbox" id="visual" label="&amp;modules.agenda.bo.toolbar.Display-visual-checkbox;" oncommand="detailVisualDisplayChanged();" />
+     					<menuitem type="checkbox" id="includeChildren" label="&amp;modules.agenda.bo.toolbar.Display-children;" oncommand="includeChildren();" />
+  					</menupopup>
+				</menu>
+                <toolbarseparator />
+                <checkbox id="allEvents" label="&amp;modules.agenda.bo.toolbar.Display-all-events;" oncommand="eventCountChanged();"/>
+
+                <hbox hidden="true" id="lastNb">
+                 	<label pack="center" control="itemCount"  value="&amp;modules.agenda.bo.toolbar.Display-itemcount-textbox;" />
+                	<textbox id="itemCount" size="2" oninput="validateItemCount();"/>
+                </hbox>	
+            </toolbar>
+        </xbl:content>
+    </binding>
+    
+</bindings>

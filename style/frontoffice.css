@@ -1,0 +1,100 @@
+ul.vevent li strong{
+	margin-right: 6px;
+}
+ul.vevent{
+	margin-bottom: 2px;
+}
+ul.vevent li{
+	padding-top: 4px;
+}
+.agenda-block dl{
+	margin: 20px 0 20px 0;
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.agenda-block dt{
+	margin: 0;
+	padding-bottom: 5px;
+	float: left;
+	width: 30%;
+	display: block;
+	text-align: right;
+}
+.agenda-block dd{
+	margin: 0;
+	padding-bottom: 5px;
+	margin-left: 32%;
+	border-left: 1px solid #000;
+	display: block;
+	padding-left: 2%;
+}
+.modules-agenda-nextevent ul.vevent{
+	margin-bottom: 12px;
+}
+ul.calendars li{
+	float: left;
+	margin-right: 12px;
+}
+ul.calendars li.last,both.clear{
+	float: none;
+}
+table.calendar{
+	margin: 0;
+	margin-bottom: 12px;
+}
+table.calendar caption{
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+}
+table.calendar tr th{
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	text-align: center;
+}
+table.calendar tr td,table.calendar th.weekLine{
+	background: #ededee;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	text-align: center;
+}
+table.calendar tr td.alternate-bgcolor{
+	background: #f3f4f4;
+}
+table.calendar tr th.weekLine{
+	color: red;
+}
+table.calendar tr th.weekLine a{
+	color: red;
+	text-decoration: none;
+}
+table.calendar a{
+	font-weight: bold;
+}
+table.calendar td.actif-link{
+	background-color: #ccc;
+}
+table.calendar tr th.weekLine a:hover{
+	color: green;
+	text-decoration: none;
+}
+table.calendar tr td.inactive,table.calendar tr td.inactive span{
+	color: #808080;
+}
+table.calendar tr td.active-day{
+	background: red;
+}
+table.calendar tr td.active-day a{
+	color: #fff;
+	text-decoration: none;
+}
+table.calendar tr td.active-day a:hover{
+	background: green;
+	display: block;
+	text-decoration: none;
+}
+table.calendar tr td.current-day{
+	border: 1px dotted #000;
+}

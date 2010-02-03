@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:i18n="http://phptal.motion-twin.com/i18n" xmlns:tal="http://phptal.motion-twin.com/tal" xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal">
+  <tabbox>
+    <tabs>
+      <tab i18n:attributes="label &amp;modules.agenda.document.preferences.Display-spaced;" change:icon="eye/small shadow"/>
+      <tab i18n:attributes="label &amp;modules.agenda.document.preferences.Rss-spaced;" change:icon="wrss/small shadow"/>
+      <tab i18n:attributes="label &amp;modules.agenda.document.preferences.Referencing-spaced;" change:icon="text_find/small"/>
+    </tabs>
+    <tabpanels>
+      <tabpanel anonid="builder_auto-generated-display" orient="vertical">
+        <grid flex="1">
+          <columns>
+            <column/>
+            <column flex="1"/>
+          </columns>
+          <rows>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="itemperpage"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="itemperpage"/>
+            </row>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="listvisualposition"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="listvisualposition"/>
+            </row>
+          </rows>
+        </grid>
+      </tabpanel>
+      <tabpanel anonid="builder_auto-generated-rss" orient="vertical">
+        <grid flex="1">
+          <columns>
+            <column/>
+            <column flex="1"/>
+          </columns>
+          <rows>
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="rssfeedtitle"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="rssfeedtitle"/>
+            </row>
+           	<row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="rssfeedurl"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="rssfeedurl"/>
+            </row> 
+            <row>
+              <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="rssfeeddescription"/>
+              <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="rssfeeddescription"/>
+            </row>
+          </rows>
+        </grid>
+      </tabpanel>
+      <tabpanel anonid="builder_auto-generated-tabpanel" orient="vertical">
+        <grid flex="1">
+          <columns>
+            <column/>
+            <column flex="1"/>
+          </columns>
+          <rows>
+            <row>
+               <change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="detailtitle"/>
+         	   <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="detailtitle"/>
+            </row>
+            <row>
+  				<change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="detaildescription"/>
+          		<change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="detaildescription"/>
+            </row>
+            <row>
+            	<change:label xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" field="detailkeywords"/>
+                <change:field xmlns:change="http://www.rbs-change.eu/change-4.2/taglib/phptal" name="detailkeywords"/>
+            </row>
+          </rows>
+        </grid>
+      </tabpanel>
+    </tabpanels>
+  </tabbox>
+</layout>

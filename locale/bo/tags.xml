@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<localization>
+  <entity id="Agenda-detail">
+    <locale lang="fr">page de d&#xE9;tail des &#xE9;v&#xE8;nements de la rubrique</locale>
+    <locale lang="en">topic events detail page</locale>
+    <locale lang="de">Detailseite des Rubrikerereignisses</locale>
+  </entity>
+  <entity id="Agenda-list">
+    <locale lang="fr">liste des &#xE9;v&#xE8;nements de la rubrique</locale>
+    <locale lang="en">events list</locale>
+    <locale lang="de">Ereignisliste der Rubrik</locale>
+  </entity>
+  <entity id="Agenda-Website-list">
+    <locale lang="fr">liste de tous les &#xE9;v&#xE8;nements</locale>
+    <locale lang="en">events list</locale>
+    <locale lang="de">Liste aller Ereignisse</locale>
+  </entity>
+</localization>

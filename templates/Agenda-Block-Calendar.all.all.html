@@ -1,0 +1,35 @@
+<table class="calendar" i18n:attributes="summary &amp;modules.agenda.frontoffice.Calendar-header-summary;">
+    <caption>
+	    <a tal:condition="exists: prevMonthUrl" class="link" tal:attributes="href prevMonthUrl" i18n:attributes="title &amp;modules.agenda.frontoffice.Previous-month;">&lt;</a>
+		<a change:link="href calendarMonth/getUrl" tal:content="calendarTitleDate" />
+		<a tal:condition="exists: nextMonthUrl" class="link" tal:attributes="href nextMonthUrl" i18n:attributes="title &amp;modules.agenda.frontoffice.Next-month;">&gt;</a>
+    </caption>
+    <thead>
+      <tr>
+        <th width="30" class="week" scope="col"><abbr i18n:attributes="title &amp;framework.date.date.Week;" i18n:translate="&amp;modules.agenda.frontoffice.Week;" /></th>
+		<th width="30" scope="col"><abbr i18n:attributes="title &amp;framework.date.date.Monday;" i18n:translate="&amp;framework.date.date.abbr.Monday;" /></th>
+        <th width="30" scope="col"><abbr i18n:attributes="title &amp;framework.date.date.Tuesday;" i18n:translate="&amp;framework.date.date.abbr.Tuesday;" /></th>
+        <th width="30" scope="col"><abbr i18n:attributes="title &amp;framework.date.date.Wednesday;" i18n:translate="&amp;framework.date.date.abbr.Wednesday;" /></th>
+        <th width="30" scope="col"><abbr i18n:attributes="title &amp;framework.date.date.Thursday;" i18n:translate="&amp;framework.date.date.abbr.Thursday;" /></th>
+        <th width="30" scope="col"><abbr i18n:attributes="title &amp;framework.date.date.Friday;" i18n:translate="&amp;framework.date.date.abbr.Friday;" /></th>
+        <th width="30" scope="col"><abbr i18n:attributes="title &amp;framework.date.date.Saturday;" i18n:translate="&amp;framework.date.date.abbr.Saturday;" /></th>
+        <th width="30" scope="col"><abbr i18n:attributes="title &amp;framework.date.date.Sunday;" i18n:translate="&amp;framework.date.date.abbr.Sunday;" /></th>
+      </tr>
+    </thead>
+    <tr tal:repeat="week calendarMonth">
+    	<th class="weekLine" scope="row">
+    	    <tal:block tal:define="global weekTitle"><tal:block change:translate="&amp;modules.agenda.frontoffice.WeekNumber;; number week/getDateAsFormattedString; year week/getYear" /></tal:block>
+    	    <abbr tal:attributes="title weekTitle">
+    			<a tal:condition="week/isActive" change:link="href week/getUrl" tal:content="week/getDateAsFormattedString" />
+    			<span tal:condition="not: week/isActive" tal:replace="week/getDateAsFormattedString" />
+    		</abbr>
+    	</th>
+    	<td tal:repeat="day week" tal:attributes="class day/getClass">
+    		<tal:block tal:condition="day/isValid">
+    			<tal:block tal:define="global dayTitle"><tal:block change:translate="&amp;modules.agenda.frontoffice.DayTitle;; day day/getDay; year day/getYear; month day/getMonth" /></tal:block>
+    			<span tal:condition="not: day/isActive" tal:attributes="title dayTitle" tal:content="day/getDateAsFormattedString" />
+    			<a tal:condition="day/isActive" change:link="href day/getUrl; title dayTitle" tal:content="day/getDateAsFormattedString"></a>
+    		</tal:block>
+    	</td>
+    </tr>
+</table>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization>
+  <entity id="shortdates">
+    <locale lang="fr">Affichage court des dates</locale>
+    <locale lang="en">Short date display</locale>
+    <locale lang="de">Kurzes Datum anzeigen</locale>
+  </entity>
+  <entity id="shortdates-help">
+    <locale lang="fr">Lorsque cette option est activée, les dates sont affichées en utilisant un format court.</locale>
+    <locale lang="de">Ist diese Option aktiviert, wird das Datum in einem kurzen Format angezeigt.</locale>
+  </entity>
+  <entity id="visual">
+    <locale lang="fr">Afficher les visuels</locale>
+    <locale lang="en">display pictures</locale>
+    <locale lang="de">Bilder anzeigen</locale>
+  </entity>
+  <entity id="visual-help">
+    <locale lang="fr">afficher les visuels</locale>
+    <locale lang="en">display pictures</locale>
+    <locale lang="de">Bilder anzeigen</locale>
+  </entity>
+  <entity id="itemcount">
+    <locale lang="fr">Nombre d'événements</locale>
+    <locale lang="en">number of events</locale>
+    <locale lang="de">Anzahl Ereignisse</locale>
+  </entity>
+  <entity id="itemcount-help">
+    <locale lang="fr">Pour afficher toutes les événements, saisir -1</locale>
+    <locale lang="en">to view all events, type -1</locale>
+    <locale lang="de">Um alle Ereignisse anzuzeigen, -1 eingeben</locale>
+  </entity>
+  <entity id="type">
+    <locale lang="fr">Type d'affichage</locale>
+    <locale lang="en">display type</locale>
+    <locale lang="de">Art der Anzeige</locale>
+  </entity>
+  <entity id="type-help">
+    <locale lang="fr">Type d'affichage pour le rendu</locale>
+    <locale lang="en">display type</locale>
+    <locale lang="de">Art der Anzeige für die Wiedergabe</locale>
+  </entity>
+  <entity id="timeordered">
+    <locale lang="fr">Ordre d'affichage</locale>
+    <locale lang="en">display ordering</locale>
+    <locale lang="de">Reihenfolge der Anzeige</locale>
+  </entity>
+  <entity id="timeordered-help">
+    <locale lang="fr">Détermine l'ordre d'affichage des événements. "du plus ancien au plus récent" : ordre du calendrier ou "du plus récent au plus ancien" : order inverse du calendrier.</locale>
+    <locale lang="de">Gibt die Reihenfolge der Anzeige der Ereignisse an. "vom Ältesten zum Aktuellsten":Kalenderordnung oder "vom Aktuellsten zum Ältesten":umgekehrte Kalenderordnung.</locale>
+  </entity>
+  <entity id="includechildren">
+    <locale lang="fr">Inclure les sous rubriques</locale>
+    <locale lang="en">include sub-topics</locale>
+    <locale lang="de">Unterrubriken einschliessen</locale>
+  </entity>
+  <entity id="includechildren-help">
+    <locale lang="fr">Afficher les événements présents dans les sous-rubriques</locale>
+    <locale lang="en">display events from sub-topics</locale>
+    <locale lang="de">Ereignisse der Unterrubriken anzeigen</locale>
+  </entity>
+  <entity id="calendarcount">
+    <locale lang="fr">Affichage du calendrier</locale>
+    <locale lang="de">Kalender anzeigen</locale>
+  </entity>
+  <entity id="calendarcount-help">
+    <locale lang="fr">Les différents types d'affichage du calendrier</locale>
+    <locale lang="de">Verschiedene Arten der Kalenderanzeige</locale>
+  </entity>
+  <entity id="currentmonthevent">
+    <locale lang="fr">EvÃ©nements du mois courant</locale>
+    <locale lang="en">Current Month Events</locale>
+  </entity>
+  <entity id="currentmonthevent-help">
+    <locale lang="fr">Affiche par dÃ©faut les Ã©vÃ©nements du mois courant uniquement.</locale>
+    <locale lang="en">Displays only events for the current month by default.</locale>
+  </entity>
+</localization>

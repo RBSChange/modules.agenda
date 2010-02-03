@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlrewriting>
+	<rules>
+		<rule documentModel="event" viewMode="detail" lang="fr">
+			<template>/agenda/$dateYear/$label-$lang,$id</template>
+			<parameters>
+				<parameter name="dateYear" format="[0-9]{4}" />
+			</parameters>
+		</rule>
+		<rule documentModel="event" viewMode="detail">
+			<template>/events/$dateYear/$label-$lang,$id</template>
+			<parameters>
+				<parameter name="dateYear" format="[0-9]{4}" />
+			</parameters>
+		</rule>
+	</rules>
+</urlrewriting>

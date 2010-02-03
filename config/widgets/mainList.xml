@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<behaviour>
+	<event type="select contextmenu"
+		target="modules_agenda_event"
+		actions="| activate reactivate deactivated duplicate" />
+	
+	<datasource module="agenda" components="event"/>
+	
+	<columns>
+		<column ref="label" flex="5" label="Label" properties="type" />
+		<column ref="date" flex="1" label="Date" />
+	</columns>
+
+</behaviour>

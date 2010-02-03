@@ -1,0 +1,6 @@
+treechildren::-moz-tree-image(modules_agenda_event){
+	list-style-image: url(/icons/small/calendar.png) ;
+}
+treechildren::-moz-tree-image(modules_agenda_preferences){
+	list-style-image: url(/icons/small/calendar.png) ;
+}

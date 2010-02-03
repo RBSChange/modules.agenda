@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rights>
+	<actions>
+		<document name="rootfolder" />
+		<document name="event">
+			<action name="Insert" back-office-name="createEvent" />
+		</document>
+		<document name="topic" />
+		<action name="GetDialogTopicTree" back-office-name="addTopic" />
+		<action name="EditLocale" back-office-name="editLocale" />
+		<action name="GetPreferencesDocument" />
+	</actions>
+
+	<roles>
+		<role name="Admin">
+			<permission name="*" />
+			<permission name="LoadPermissions.*" />
+			<permission name="SavePermissions.*" />
+			<permission name="GetPreferencesDocument" />
+			<permission name="Move.*" />
+			<permission name="GetDialogTopicTree" />
+			<permission name="Remove.topic" />
+			<permission name="EditLocale" />
+		</role>
+
+		<role name="Writer" extend="Guest">
+			<permission name="Order" />
+			<!-- Permission on the move action is based on the destination, not on moved document -->
+			<permission name="Move.topic" />
+			<permission name="Load.*" />
+			<permission name="Rename.*" />
+			<permission name="PutInTrash.*" />
+			<permission name="Delete.*" />
+			<permission name="Insert.*" />
+			<permission name="Update.*" />
+		</role>
+
+		<role name="Translator" extend="Guest">
+			<permission name="LoadForTranslation.*" />
+			<permission name="UpdateTranslation.*" />
+			<permission name="EditLocale" />
+		</role>
+
+		<role name="Validator" extend="Guest">
+			<permission name="Activate.event" />
+			<permission name="Cancel.event" />
+		</role>
+
+		<role name="Guest" extend="User">
+			<permission name="Enabled" />
+		</role>
+
+		<role name="User">
+			<permission name="List.*" />
+		</role>
+	</roles>
+</rights>
