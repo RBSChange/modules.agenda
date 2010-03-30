@@ -17,6 +17,10 @@ class agenda_BlockEventlistSuccessView extends block_BlockView
 			->setParameters($this->getParameters());
 			$subBlock->setParameter('month', $subCal['month']);
 			$subBlock->setParameter('type', $subCal['type']);
+			if($this->hasParameter('parentref'))
+			{
+				$subBlock->setParameter('parentopic', $this->getParameter('parentref'));
+			}
 			$subBlockContent[] = $this->forward($subBlock);
 		}
 		$this->setParameter('calendars', $subBlockContent);
