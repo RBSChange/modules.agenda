@@ -39,10 +39,10 @@
 				path="modules/agenda/setup/sample/papillon_change.jpg"
 				label="Papillon change" id="photo3" />
 			<media
-				path="modules/agenda/setup/sample/RBS batiment open space.jpg"
+				path="modules/agenda/setup/sample/RBS_batiment_open_space.jpg"
 				label="RBS batiment open space" id="photo4" />
 			<media
-				path="modules/agenda/setup/sample/RBS batiment.jpg"
+				path="modules/agenda/setup/sample/RBS_batiment.jpg"
 				label="RBS batiment" id="photo5" />
 		</folder>
 	</rootfolder>
