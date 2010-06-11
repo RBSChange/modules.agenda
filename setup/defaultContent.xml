@@ -3,7 +3,7 @@
 	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
 	<binding fileName="modules/agenda/persistentdocument/import/agenda_binding.xml" />	
 	
-	<website byTag="default_modules_website_default-website" template="tplTwo">
+	<website byTag="default_modules_website_default-website" template="webfactory/tplTwo">
 		<topic label="Agenda" id="agendatopic">
 			<page label="Liste des événements" isIndexPage="true" indexingstatus="false">
 				<tag name="functional_agenda_event-list" />
