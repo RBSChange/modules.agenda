@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+  <binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml"/>
+  <actiondef modulename="agenda" actionname="move.topic" label="modules.agenda.bo.useractionlogger.move-topic"/>
+  <actiondef modulename="agenda" actionname="insert.event" label="modules.agenda.bo.useractionlogger.insert-event"/>
+  <actiondef modulename="agenda" actionname="activate.event" label="modules.agenda.bo.useractionlogger.activate-event"/>
+  <actiondef modulename="agenda" actionname="update.event" label="modules.agenda.bo.useractionlogger.update-event"/>
+  <actiondef modulename="agenda" actionname="savepermissions.rootfolder" label="modules.agenda.bo.useractionlogger.savepermissions-rootfolder"/>
+  <actiondef modulename="agenda" actionname="savepermissions.topic" label="modules.agenda.bo.useractionlogger.savepermissions-topic"/>
+</script>
