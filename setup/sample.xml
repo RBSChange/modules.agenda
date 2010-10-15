@@ -6,7 +6,7 @@
 	
 	<website byTag="default_modules_website_default-website" template="webfactory/tplTwo">
 		<topic label="Agenda" id="agendatopic">
-			<page label="Liste des événements" isIndexPage="true" indexingstatus="false">
+			<page label="Liste des événements" isIndexPage="true" navigationVisibility="hidden" indexingstatus="false">
 				<tag name="functional_agenda_event-list" />
 				<changecontent for="content-block">
 					<changeblock type="modules_agenda_eventContextualList" />
@@ -18,7 +18,7 @@
 					<changeblock type="modules_agenda_eventlist" />
 				</changecontent>
 			</page>
-			<page label="Détail d'un événement" navigationVisibility="hidden"  indexingstatus="false">
+			<page label="Détail d'un événement" navigationVisibility="hidden" indexingstatus="false">
 				<tag name="functional_agenda_event-detail" />
 				<changecontent for="content-block">
 					<changeblock type="modules_agenda_event" />
