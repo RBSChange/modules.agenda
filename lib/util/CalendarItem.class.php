@@ -72,7 +72,7 @@ class agenda_CalendarItem extends ArrayObject
 		}
 		if (!is_null($this->getSiblingId()))
 		{
-			return LinkHelper::getUrl('agenda', 'ViewList', $this->getLinkParameters());
+			return LinkHelper::getActionUrl('agenda', 'ViewList', $this->getLinkParameters());
 		}
 		return LinkHelper::getCurrentUrl($this->getLinkParameters());
 	}

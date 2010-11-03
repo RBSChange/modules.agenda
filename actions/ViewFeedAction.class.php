@@ -24,7 +24,7 @@ class agenda_ViewFeedAction extends agenda_Action
 			$this->writer->startElement('item');
 			$this->add('title', $event->getLabel());
 			$this->add('description', $event->getSummary());
-			$this->add('guid', str_replace('&amp;', '&', LinkHelper::getUrl($event)));
+			$this->add('guid', str_replace('&amp;', '&', LinkHelper::getDocumentUrl($event)));
 			$date = date_Calendar::getInstance($event->getDate());
 			$this->add('pubDate', date_DateFormat::format($date,'d M Y H:i:s', 'en') . ' GMT');
 			$this->writer->endElement();
