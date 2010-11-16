@@ -68,7 +68,7 @@ class agenda_ViewListAction extends agenda_Action
 	/**
 	 * @return Boolean
 	 */
-	protected function suffixSecureActionByDocument()
+	protected function isDocumentAction()
 	{
 		return false;
 	}

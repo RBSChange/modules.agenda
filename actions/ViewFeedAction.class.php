@@ -79,7 +79,7 @@ class agenda_ViewFeedAction extends agenda_Action
 	/**
 	 * @return Boolean
 	 */
-	protected function suffixSecureActionByDocument()
+	protected function isDocumentAction()
 	{
 		return false;
 	}
