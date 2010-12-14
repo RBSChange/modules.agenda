@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.actions" lcid="de_DE">
+  <key id="create-event">neues Ereignis</key>
+  <key id="create_">neu</key>
+  <key id="create-preferences">neue Präferenz</key>
+</i18n>

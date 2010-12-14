@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.blocks.event" lcid="fr_FR">
+  <key id="shortdates">Affichage court des dates</key>
+  <key id="shortdates-help">lorsque cette option est activée, les dates sont affichées en utilisant un format court.</key>
+  <key id="linktoallevents">lien vers toutes les évènements</key>
+  <key id="linktoallevents-help">afficher ou non le lien menant à la liste de tous les évènements du site. Il s'agit de la page tagguée ″Liste de tous les évènements″.</key>
+  <key id="linktoeventsfromsametopic">lien vers les évènements de la rubrique</key>
+  <key id="linktoeventsfromsametopic-help">afficher ou non le lien menant à la liste des évènements de la rubrique. Il s'agit de la page tagguée ″Liste des évènements de la rubrique″.</key>
+  <key id="linksposition">position des liens</key>
+  <key id="linksposition-help">détermine où les liens ″Voir tous les évènements″ et ″Voir les évènements de la rubrique″ sont affichés. Si aucun des liens n'est affiché, ce paramètres est sans importance.</key>
+</i18n>

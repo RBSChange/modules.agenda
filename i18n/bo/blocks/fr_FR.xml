@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.blocks" lcid="fr_FR">
+  <key id="calendar">calendrier</key>
+  <key id="event-detail">détail d'un évènement</key>
+  <key id="event-list">événements de la rubrique</key>
+  <key id="all-event-list">événements du site</key>
+  <key id="next-event">prochain événement</key>
+</i18n>

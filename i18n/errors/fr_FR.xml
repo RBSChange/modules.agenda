@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.errors" lcid="fr_FR">
+  <key id="modules-agenda-getpreferencesdocument">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Ouvrir les préférences″</key>
+  <key id="modules-agenda-move-rootfolder">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Ajouter une rubrique″</key>
+  <key id="modules-agenda-remove-topic">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Retirer une rubrique″</key>
+  <key id="modules-agenda-editlocale">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Editer une locale″</key>
+  <key id="modules-agenda-order">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Modifier l'ordre des éléments″</key>
+  <key id="modules-agenda-activate-event">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Activer un événement″</key>
+  <key id="modules-agenda-cancel-event">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Annuler un événement″</key>
+  <key id="modules-agenda-enabled">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Accès au module″</key>
+</i18n>

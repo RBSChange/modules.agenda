@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.blocks.eventlist" lcid="fr_FR">
+  <key id="shortdates">Affichage court des dates</key>
+  <key id="shortdates-help">Lorsque cette option est activée, les dates sont affichées en utilisant un format court.</key>
+  <key id="visual">Afficher les visuels</key>
+  <key id="visual-help">afficher les visuels</key>
+  <key id="itemcount">Nombre d'événements</key>
+  <key id="itemcount-help">Pour afficher toutes les événements, saisir -1</key>
+  <key id="type">Type d'affichage</key>
+  <key id="type-help">Type d'affichage pour le rendu</key>
+  <key id="timeordered">Ordre d'affichage</key>
+  <key id="timeordered-help">Détermine l'ordre d'affichage des événements. ″du plus ancien au plus récent″ : ordre du calendrier ou ″du plus récent au plus ancien″ : order inverse du calendrier.</key>
+  <key id="includechildren">Inclure les sous rubriques</key>
+  <key id="includechildren-help">Afficher les événements présents dans les sous-rubriques</key>
+  <key id="calendarcount">Affichage du calendrier</key>
+  <key id="calendarcount-help">Les différents types d'affichage du calendrier</key>
+  <key id="currentmonthevent">EvÃ©nements du mois courant</key>
+  <key id="currentmonthevent-help">Affiche par dÃ©faut les Ã©vÃ©nements du mois courant uniquement.</key>
+</i18n>

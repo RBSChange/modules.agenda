@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.blocks.calendar" lcid="de_DE">
+  <key id="parentopic">verwandte Rubrik</key>
+  <key id="parentopic-help">wählen Sie hier die Rubrik, aus der die Ereignisse abgerufen werden. Ist keine Rubrik angegeben, wird die Rubrik der aktuellen Seite automatisch ausgewählt.</key>
+</i18n>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.frontoffice" lcid="en_GB">
+  <key id="detail-datetimeinfo">date and time</key>
+  <key id="detail-place">place</key>
+  <key id="detail-contact">contact</key>
+  <key id="detail-accessmap">access map</key>
+  <key id="detail-attachment">attached</key>
+  <key id="subscription-page">subscription</key>
+  <key id="no-next-event">no upcoming event!</key>
+  <key id="list-link">go to events list</key>
+  <key id="back-link">back to events list</key>
+  <key id="rss-link">RSS feed</key>
+  <key id="begindate">begin date</key>
+  <key id="enddate">end date</key>
+  <key id="ondate">date</key>
+  <key id="calendar-header-caption">pick a date</key>
+  <key id="calendar-header-summary">this calendar allows you, by choosing a precise date, to know all the related events.</key>
+  <key id="week">week</key>
+  <key id="weeknumber">week {number}, {year}</key>
+  <key id="next-month">next month</key>
+  <key id="previous-month">previous month</key>
+  <key id="daytitle">{year}/{month}/{day}</key>
+  <key id="place">place</key>
+  <key id="event-detail">event detail</key>
+  <key id="error-no-preferences">please setup the preferences for module agenda</key>
+  <key id="all-events">view all events</key>
+  <key id="events-in-the-same-topic">view events in this topic</key>
+</i18n>

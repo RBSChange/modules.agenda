@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.blocks.eventcontextuallist" lcid="en_GB">
+  <key id="shortdates">Short date display</key>
+  <key id="visual">display pictures</key>
+  <key id="visual-help">display pictures</key>
+  <key id="itemcount">number of events</key>
+  <key id="itemcount-help">to view all events, type -1</key>
+  <key id="type">display type</key>
+  <key id="type-help">display type</key>
+  <key id="currentmonthevent">Current Month Events</key>
+  <key id="currentmonthevent-help">Displays only events for the current month by default.</key>
+  <key id="timeordered">display ordering</key>
+  <key id="includechildren">include sub-topics</key>
+  <key id="includechildren-help">display events from sub-topics</key>
+</i18n>

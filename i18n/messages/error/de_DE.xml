@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.messages.error" lcid="de_DE">
+  <key id="enddatemustbeafterstartdate">Enddatum des Ereignisses muss später als Anfangsdatum sein</key>
+</i18n>

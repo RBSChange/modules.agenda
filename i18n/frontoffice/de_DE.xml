@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.frontoffice" lcid="de_DE">
+  <key id="detail-datetimeinfo">Datum und Zeit</key>
+  <key id="detail-place">Ort</key>
+  <key id="detail-contact">Kontakt</key>
+  <key id="detail-accessmap">Zugangsplan</key>
+  <key id="detail-attachment">Anhang</key>
+  <key id="subscription-page">Anmeldung</key>
+  <key id="no-next-event">Momentan ist kein Ereignis veröffentlicht!</key>
+  <key id="list-link">Ereignisseliste anzeigen</key>
+  <key id="back-link">Zurück zur Ereignisseliste</key>
+  <key id="rss-link">RSS-Feed</key>
+  <key id="begindate">Anfangsdatum</key>
+  <key id="enddate">Enddatum</key>
+  <key id="ondate">Datum</key>
+  <key id="calendar-header-caption">Bitte Datum wählen</key>
+  <key id="calendar-header-summary">Dieser Kalender ermöglicht Ihnen, bei der Wahl eines bestimmten Datums, alle verbundenen Ereignisse anzuzeigen.</key>
+  <key id="week">Woche</key>
+  <key id="weeknumber">woche {number}, {year}</key>
+  <key id="place">Ort</key>
+  <key id="event-detail">Ereignisdetail</key>
+  <key id="error-no-preferences">Bitte erst die Module der Agenda einstellen!</key>
+  <key id="noevents">Momentan ist kein Ereignis veröffentlicht!</key>
+  <key id="all-events">Alle Ereignisse anzeigen</key>
+  <key id="events-in-the-same-topic">Alle Ereignisse der Rubrik anzeigen</key>
+</i18n>

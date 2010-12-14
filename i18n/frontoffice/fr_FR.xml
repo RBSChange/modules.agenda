@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.frontoffice" lcid="fr_FR">
+  <key id="detail-datetimeinfo">date et horaire</key>
+  <key id="detail-place">lieu</key>
+  <key id="detail-contact">contact</key>
+  <key id="detail-accessmap">plan d'accès</key>
+  <key id="detail-attachment">fichier attaché</key>
+  <key id="subscription-page">inscription</key>
+  <key id="create-new-in-topic">Créer un événement dans la rubrique {containerLabel}</key>
+  <key id="no-next-event">aucun évènement n'est publié pour le moment !</key>
+  <key id="list-link">voir la liste des évènements</key>
+  <key id="back-link">revenir à la liste des évènements</key>
+  <key id="rss-link">flux RSS</key>
+  <key id="begindate">date de début</key>
+  <key id="enddate">date de fin</key>
+  <key id="ondate">date</key>
+  <key id="calendar-header-caption">sélectionnez une date</key>
+  <key id="calendar-header-summary">ce calendrier vous permet, en choisissant une date précise, de connaître tous les événements à cette date.</key>
+  <key id="week">sem.</key>
+  <key id="weeknumber">semaine {number} de l'année {year}</key>
+  <key id="next-month">mois prochain</key>
+  <key id="previous-month">mois précédent</key>
+  <key id="daytitle">{day}/{month}/{year}</key>
+  <key id="place">lieu</key>
+  <key id="event-detail">détail d'un évènement de l'agenda</key>
+  <key id="error-no-preferences">veuillez d'abord régler les préférences du module agenda</key>
+  <key id="noevents">aucun évènement n'est publié pour le moment !</key>
+  <key id="all-events">voir tous les évènements</key>
+  <key id="events-in-the-same-topic">voir les évènements de la rubrique</key>
+</i18n>

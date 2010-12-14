@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.toolbar" lcid="de_DE">
+  <key id="classic-display">klassische Ansicht</key>
+  <key id="homepage-display">Startseite-Ansicht</key>
+  <key id="archive-display">Archiv-Ansicht</key>
+  <key id="achrono-display">vom Aktuellsten zum Ältesten</key>
+  <key id="chrono-display">vom Ältesten zum Aktuellsten</key>
+  <key id="display-visual-checkbox">Bilder anzeigen</key>
+  <key id="display-itemcount-textbox">Anzahl Ereignisse:</key>
+  <key id="display-properties">Eigenschaften der Anzeige</key>
+  <key id="calendar-properties">Kalenderansicht</key>
+  <key id="no-calendar-display">Kalender nicht anzeigen</key>
+  <key id="single-calendar-display">einfacher Kalender anzeigen</key>
+  <key id="double-calendar-display">doppelter Kalender anzeigen</key>
+  <key id="chrono-properties">Reihenfolge der Anzeige</key>
+  <key id="display-children">Unterordner/-rubriken einschliessen</key>
+  <key id="display-all-events">alle Ereignisse anzeigen</key>
+</i18n>

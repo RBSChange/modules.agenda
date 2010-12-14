@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.general" lcid="en_GB">
+  <key id="module-name">agenda</key>
+  <key id="tree-root-name">agenda</key>
+  <key id="system-folder-name">agenda</key>
+  <key id="category-list-label">event category</key>
+  <key id="classic-display">classic display</key>
+  <key id="homepage-display">homepage display</key>
+  <key id="archive-display">archive display</key>
+  <key id="achrono-display">from most recent to oldest</key>
+  <key id="chrono-display">from oldest to most recent</key>
+  <key id="display-visual-checkbox">display pictures</key>
+  <key id="display-itemcount-textbox">number of event:</key>
+  <key id="display-properties">display properties</key>
+  <key id="calendar-properties">calendar display</key>
+  <key id="no-calendar-display">do not display calendar</key>
+  <key id="single-calendar-display">display single calendar</key>
+  <key id="double-calendar-display">display double calendar</key>
+  <key id="chrono-properties">display ordering</key>
+  <key id="display-children">include sub-folders/topics</key>
+  <key id="display-all-events">display all events</key>
+  <key id="position-both">top and bottom</key>
+  <key id="position-top">top</key>
+  <key id="position-bottom">bottom</key>
+</i18n>

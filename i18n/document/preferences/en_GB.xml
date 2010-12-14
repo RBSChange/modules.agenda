@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.document.preferences" lcid="en_GB">
+  <key id="edition-form-title">agenda module preferences</key>
+  <key id="itemperpage">item number per page</key>
+  <key id="itemperpage-help">item number per page (page numbering)</key>
+  <key id="listvisualposition">visual position</key>
+  <key id="listvisualposition-help">visual position (list display)</key>
+  <key id="rssfeedtitle">titel</key>
+  <key id="rssfeedtitle-help">titel</key>
+  <key id="rssfeedurl">URL</key>
+  <key id="rssfeedurl-help">URL</key>
+  <key id="rssfeeddescription">description</key>
+  <key id="rssfeeddescription-help">description</key>
+  <key id="detailtitle">meta-title</key>
+  <key id="detailtitle-help">meta-title</key>
+  <key id="detaildescription">meta-description</key>
+  <key id="detaildescription-help">meta-description</key>
+  <key id="detailkeywords">keywords</key>
+  <key id="detailkeywords-help">keywords</key>
+  <key id="display-spaced"> Display</key>
+  <key id="rss-spaced"> RSS feed</key>
+  <key id="referencing-spaced"> referencing</key>
+</i18n>

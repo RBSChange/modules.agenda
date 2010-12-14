@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.blocks.event" lcid="en_GB">
+  <key id="shortdates">Short date display</key>
+  <key id="linktoallevents">display link to all events</key>
+  <key id="linktoallevents-help">linktoallevents-help</key>
+  <key id="linktoeventsfromsametopic">display link to events in the same topic</key>
+  <key id="linktoeventsfromsametopic-help">linktoeventsfromsametopic</key>
+  <key id="linksposition">links position</key>
+  <key id="linksposition-help">linktonewsfromsametopic</key>
+</i18n>

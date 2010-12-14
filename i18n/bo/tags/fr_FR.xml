@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.tags" lcid="fr_FR">
+  <key id="agenda-detail">page de détail des évènements de la rubrique</key>
+  <key id="agenda-list">liste des évènements de la rubrique</key>
+  <key id="agenda-website-list">liste de tous les évènements</key>
+</i18n>

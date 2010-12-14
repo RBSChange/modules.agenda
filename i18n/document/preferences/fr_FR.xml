@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.document.preferences" lcid="fr_FR">
+  <key id="document-name">préférence</key>
+  <key id="edition-form-title">préférences du module agenda</key>
+  <key id="itemperpage">nombre d'évènements par page</key>
+  <key id="itemperpage-help">nombre d'évènements par page (pagination)</key>
+  <key id="listvisualposition">position des visuels</key>
+  <key id="listvisualposition-help">ce champ définit la position des visuels associés à l'affichage de la liste des évènements.</key>
+  <key id="rssfeedtitle">titre</key>
+  <key id="rssfeedtitle-help">ce champ définit le titre du flux RSS associé à une liste des évènements.</key>
+  <key id="rssfeedurl">URL</key>
+  <key id="rssfeedurl-help">ce champ définit l'URL associée au flux RSS d'une liste des évènements.</key>
+  <key id="rssfeeddescription">description</key>
+  <key id="rssfeeddescription-help">ce champ définit la description associée au flux RSS d'une liste des évènements.</key>
+  <key id="detailtitle">meta-titre</key>
+  <key id="detailtitle-help">ce champ définit la balise meta-titre associée au flux RSS d'une liste des évènements. Si le champ contient les mots TITRE, RESUME ou DATE, ceci seront respectivement remplacé
+			par le titre, le résumé et la date de l'évènement en question.</key>
+  <key id="detaildescription">meta-description</key>
+  <key id="detaildescription-help">ce champ définit la balise meta-description associée au flux RSS d'une liste des évènements. Si le champ contient les mots TITRE, RESUME ou DATE, ceci seront respectivement
+			remplacé par le titre, le résumé et la date de l'évènement en question.</key>
+  <key id="detailkeywords">mots-clés</key>
+  <key id="detailkeywords-help">ce champ définit la balise mots-clés associée au flux RSS d'une liste des évènements. Si le champ contient les mots TITRE, RESUME ou DATE, ceci seront respectivement remplacé
+			par le titre, le résumé et la date de l'évènement en question.</key>
+  <key id="display-spaced"> Affichage</key>
+  <key id="rss-spaced"> Flux RSS</key>
+  <key id="referencing-spaced"> Référencement</key>
+</i18n>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.blocks.event" lcid="de_DE">
+  <key id="shortdates">kurzes Datum anzeigen</key>
+  <key id="shortdates-help">ist diese Option aktiviert, wird das Datum in einem kurzen Format angezeigt.</key>
+  <key id="linktoallevents">Verknüpfung zu allen Ereignissen</key>
+  <key id="linktoallevents-help">Verknüpfung zu allen Ereignissen der Seite anzeigen oder nicht anzeigen. Dies ist die getaggte Seite ″Liste aller Ereignisse″.</key>
+  <key id="linktoeventsfromsametopic">Verknüpfung zu den Ereignissen der Rubrik</key>
+  <key id="linktoeventsfromsametopic-help">Verknüpfung zur Liste der Ereignisse der Rubrik anzeigen oder nicht anzeigen. Dies ist die getaggte Seite ″Liste der Ereignisse der Rubrik″.</key>
+  <key id="linksposition">Position der Verknüpfungen</key>
+  <key id="linksposition-help">gibt an wo die Verknüpfungen ″Alle Ereignisse anzeigen″ und ″Alle Elemente der Rubrik anzeigen″ angezeigt sind. Wenn keine der Verknüpfungen angezeigt ist, ist dieser Parameter unwichtig.</key>
+</i18n>

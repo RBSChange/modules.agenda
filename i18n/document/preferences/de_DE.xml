@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.document.preferences" lcid="de_DE">
+  <key id="document-name">Präferenzen</key>
+  <key id="edition-form-title">Präferenzen des Moduls Agenda</key>
+  <key id="itemperpage">Anzahl Ereignisse pro Seite</key>
+  <key id="itemperpage-help">Anzahl Ereignisse pro Seite (Paginierung)</key>
+  <key id="listvisualposition">Bilderposition</key>
+  <key id="listvisualposition-help">dieses Feld bestimmt die Bilderposition in Zusammenhang mit der Anzeige der Ereignisliste.</key>
+  <key id="rssfeedtitle">Titel</key>
+  <key id="rssfeedtitle-help">dieses Feld bestimmt den Titel des RSS-Feeds in Zusammenhang mit einer Ereignisliste.</key>
+  <key id="rssfeedurl">URL</key>
+  <key id="rssfeedurl-help">dieses Feld bestimmt die URL in Zusammenhang mit dem RSS-Feed einer Ereignisliste.</key>
+  <key id="rssfeeddescription">Beschreibung</key>
+  <key id="rssfeeddescription-help">dieses Feld bestimmt die Beschreibung in Zusammenhang mit dem RSS-Feed einer Ereignisliste.</key>
+  <key id="detailtitle">Meta-Titel</key>
+  <key id="detailtitle-help">dieses Feld bestimmt den Meta-Titel Tag in Zusammenhang mit dem RSS-Feed einer Ereignisliste. Enthält das Feld die Worte TITEL, ZUSAMMENFASSUNG oder DATUM, werden diese jeweils durch
+			den Titel, die Zusammenfassung und das Datum des besagten Ereignisses ersetzt.</key>
+  <key id="detaildescription">Meta-Beschreibung</key>
+  <key id="detaildescription-help">dieses Feld bestimmt den Meta-Beschreibung Tag in Zusammenhang mit dem RSS-Feed einer Ereignisliste. Enthält das Feld die Worte TITEL, ZUSAMMENFASSUNG oder DATUM, werden diese jeweils durch
+			den Titel, die Zusammenfassung und das Datum des besagten Ereignisses ersetzt.</key>
+  <key id="detailkeywords">Stichwörter</key>
+  <key id="detailkeywords-help">dieses Feld bestimmt den Stichwörter Tag in Zusammenhang mit dem RSS-Feed einer Ereignisliste. Enthält das Feld die Worte TITEL, ZUSAMMENFASSUNG oder DATUM, werden diese jeweils durch
+			den Titel, die Zusammenfassung und das Datum des besagten Ereignisses ersetzt.</key>
+  <key id="display-spaced"> Ansicht</key>
+  <key id="rss-spaced"> RSS-Feed</key>
+  <key id="referencing-spaced"> Referenzierung</key>
+</i18n>

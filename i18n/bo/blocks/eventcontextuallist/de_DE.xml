@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.agenda.bo.blocks.eventcontextuallist" lcid="de_DE">
+  <key id="shortdates">Kurzes Datum anzeigen</key>
+  <key id="shortdates-help">Ist diese Option aktiviert, wird das Datum in einem kurzen Format angezeigt.</key>
+  <key id="visual">Bilder anzeigen</key>
+  <key id="visual-help">Bilder anzeigen</key>
+  <key id="itemcount">Anzahl Ereignisse</key>
+  <key id="itemcount-help">Um alle Ereignisse anzuzeigen, -1 eingeben</key>
+  <key id="type">Art der Anzeige</key>
+  <key id="type-help">Art der Anzeige für die Wiedergabe</key>
+  <key id="timeordered">Reihenfolge der Anzeige</key>
+  <key id="timeordered-help">Gibt die Reihenfolge der Anzeige der Ereignisse an. ″vom Ältesten zurm Aktuellsten″:Kalenderordnung oder ″vom Aktuellsten zum Ältesten″:umgekehrte Kalenderordnung.</key>
+  <key id="includechildren">Unterrubriken einschliessen</key>
+  <key id="includechildren-help">Ereignisse der Unterrubriken anzeigen</key>
+  <key id="calendarcount">Kalender anzeigen</key>
+  <key id="calendarcount-help">Verschiedene Arten der Kalenderanzeige</key>
+</i18n>
