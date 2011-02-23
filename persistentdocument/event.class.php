@@ -48,8 +48,7 @@ class agenda_persistentdocument_event extends agenda_persistentdocument_eventbas
 		$fullText .= " " . $this->getPlace();
 		$fullText .= " " . $this->getContact();
 		return f_util_StringUtils::htmlToText($fullText, false);
-	}
-	
+	}	
 
 	/**
 	 * @return date_TimeSpan
@@ -248,16 +247,6 @@ class agenda_persistentdocument_event extends agenda_persistentdocument_eventbas
 		$begin = date_Calendar::getInstance($this->getUIDate());
 		$end = date_Calendar::getInstance($this->getUIEnddate())->toMidnight();
 		return $end->equals($begin);
-	}
-	
-	/**
-	 * @param string $moduleName
-	 * @param string $treeType
-	 * @param array<string, string> $nodeAttributes
-	 */
-	protected function addTreeAttributes($moduleName, $treeType, &$nodeAttributes)
-	{
-		$nodeAttributes['date'] = date_DateFormat::format($this->getUIDate(), 'D d M Y H:i', RequestContext::getInstance()->getUILang());
 	}
 	
 	/**

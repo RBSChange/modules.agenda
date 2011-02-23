@@ -286,5 +286,15 @@ class agenda_EventService extends f_persistentdocument_DocumentService
 	protected function preDuplicate($newDocument, $originalDocument, $parentNodeId)
 	{
 	}
-
+	
+	/**
+	 * @param agenda_persistentdocument_event $document
+	 * @param string $moduleName
+	 * @param string $treeType
+	 * @param array<string, string> $nodeAttributes
+	 */
+	public function addTreeAttributes($document, $moduleName, $treeType, &$nodeAttributes)
+	{
+		$nodeAttributes['date'] = date_DateFormat::format($document->getUIDate(), 'D d M Y H:i', RequestContext::getInstance()->getUILang());
+	}
 }
