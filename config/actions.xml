@@ -1,11 +1,35 @@
 <?xml version="1.0"?>
 <actions extends="generic">
-  <action name="createEvent" label="&amp;modules.agenda.bo.actions.Create-Event;">
-    <parameter name="listWidget"/>
-    <body><![CDATA[this.createDocument(listWidget, this.name, 'event', 'moduleForm');]]></body>
-  </action>
-  <action name="createPreferences" label="&amp;modules.agenda.bo.actions.Create-Preferences;">
-    <parameter name="listWidget"/>
-    <body><![CDATA[this.createDocument(listWidget, this.name, 'preferences', 'moduleForm');]]></body>
-  </action>
+	<action name="createEvent" label="&amp;modules.agenda.bo.actions.Create-Event;">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocument(listWidget, this.name, 'event', 'moduleForm');]]></body>
+	</action>
+	<action name="createPreferences" label="&amp;modules.agenda.bo.actions.Create-Preferences;">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocument(listWidget, this.name, 'preferences', 'moduleForm');]]></body>
+	</action>
+	<action name="duplicate" label="&amp;modules.uixul.bo.actions.Duplicate;" icon="copy">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+		    var ids = listWidget.getSelectedIds();
+	    	var parentref = listWidget.getSelectedComponents().document[0].component.(@name=="parentid").toString();
+	    	
+	    	var me = this;
+			var callBack = function(result) {me.onDuplicate(result);}
+			wCore.executeJSON(this.name, 'Duplicate', {cmpref: ids, lang: this.getContextLang(listWidget), parentref: parentref}, callBack, true);
+		]]></body>
+	</action>
+	<action name="onDuplicate">
+		<parameter name="result" />
+		<body><![CDATA[
+			if (result.status === 'OK')
+			{
+				this.refreshAll();
+			}
+			else
+			{
+				wToolkit.setNotificationMessage(result.contents.errorMessage, wToolkit.ERROR);
+			}
+		]]></body>
+	</action>
 </actions>
